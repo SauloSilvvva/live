@@ -23,11 +23,11 @@ Inicio
          escreval( metro,"quilomêtro(s) equivale a", quilometro,"metro(s)")
       senao
          se opcao = 2 entao
+            limpatela
             escreval("Digite o valor do metro cúbico a ser convertido em litro")
             leia(litro)
-            limpatela
-            metroc <- ( litro /1000 )
-            escreval(metroc,"metro cúbico equivale a", litro,"litro(s)")
+            metroc <- litro *1000
+            escreval(litro,"metro cúbico equivale a", metroc,"litro(s)")
          fimse
       fimse
    ate opcao = 3
