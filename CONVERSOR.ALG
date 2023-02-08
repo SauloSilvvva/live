@@ -10,6 +10,10 @@ Var
 
 
 Inicio
+
+   escreval("Bem vindo, escolha uma opção abaixo")
+   escreval("...............................................................")
+
    repita
       escreval("Digite 1 - para converter quilometro em metros")
       escreval("Digite 2 - para converter litros metros cúbicos")
@@ -19,6 +23,7 @@ Inicio
          limpatela
          escreval("Digite o valor do quilomêtro a ser convertido em metros")
          leia(metro)
+         limpatela
          quilometro <- metro *1000
          escreval( metro,"quilomêtro(s) equivale a", quilometro,"metro(s)")
       senao
@@ -26,11 +31,16 @@ Inicio
             limpatela
             escreval("Digite o valor do metro cúbico a ser convertido em litro")
             leia(litro)
+            limpatela
             metroc <- litro *1000
             escreval(litro,"metro cúbico equivale a", metroc,"litro(s)")
          fimse
       fimse
-   ate opcao = 3
+      se opcao = 3 entao
+         escreval("obrigado por usar nosso programa")
+      fimse
+
+
 fimalgoritmo
 
 
@@ -39,4 +49,6 @@ fimalgoritmo
 
 
 Fimalgoritmo
+
+
 
